@@ -30,7 +30,11 @@ public class ParkPlanningFrame extends JFrame {
         grp = new Group(new Drawable[]{});
 
         drawingPanel.setImage(grp);
+
         setVisible(true);
+
+        lastX = drawingPanel.getWidth()/2;
+        lastY = drawingPanel.getHeight()/2;
 
         drawingPanel.addMouseListener(new MouseAdapter() {
             @Override

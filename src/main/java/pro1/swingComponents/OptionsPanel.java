@@ -20,7 +20,7 @@ public class OptionsPanel extends JPanel {
 
 
 
-        buttonDraw = new JButton("Draw tree");
+        buttonDraw = new JButton("Plant");
         buttonReset = new JButton("Reset");
         add(buttonDraw);
         add(buttonReset);
