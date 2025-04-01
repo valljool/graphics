@@ -5,12 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Group implements Drawable{
-    private Drawable[] items;
     private List<Drawable> list = new ArrayList<>();
 
-    public Group(Drawable[] items) {
-        this.items = items;
-    }
 
     @Override
     public void draw(Graphics2D g) {
@@ -28,7 +24,11 @@ public class Group implements Drawable{
         list.add(item);
     }
 
-    public void resetGroup(){
+    public void clearGroup(){
         list.clear();
+    }
+
+    public void setList(List<Drawable> list) {
+        this.list = list;
     }
 }
